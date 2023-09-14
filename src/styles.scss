@@ -3,7 +3,7 @@ $orange: #ffc72a;
 $blue: #4c43d4;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cinzel', serif;
   background-color: $blue;
   color: #fff;
   padding: 0;
@@ -20,7 +20,7 @@ button {
 }
 
 .app {
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,7 +77,7 @@ button {
 }
 
 .btn-reset {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #fff;
   border-radius: 15px;
   padding: 12px 18px;
