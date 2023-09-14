@@ -77,6 +77,7 @@ function App() {
           handleSquareClick={handleSquareClick}
           winningSquares={winningSquares}
         />
+        <div className="bg-balls"></div>
         <button
           type="button"
           className={`btn-reset ${winner ? 'active' : ' '}  `}

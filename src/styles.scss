@@ -194,6 +194,8 @@ button {
     margin: 0; // Remove any default margin on the h2
     text-align: center; // Center the text horizontally
     flex-grow: 1; // Allow the h2 to grow and take available space
+    position: relative;
+    left: 20px;
   }
 
   .git_hub {
