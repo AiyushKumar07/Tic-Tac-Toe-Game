@@ -59,26 +59,35 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <h2 style={{ fontWeight: 'bold' }}>
-        TIC <span className="text-orange">TAC</span> TOE
-      </h2>
-      <StatusMessage winner={winner} gamingBoard={gamingBoard} />
-      <Board
-        squares={gamingBoard.squares}
-        handleSquareClick={handleSquareClick}
-        winningSquares={winningSquares}
-      />
-      <button
-        type="button"
-        className={`btn-reset ${winner ? 'active' : ' '}  `}
-        onClick={onNewGameStart}
-      >
-        Start New Game
-      </button>
-      <h2 style={{ fontWeight: 'normal' }}>Current Game History</h2>
-      <History history={history} moveTo={moveTo} currentMove={currentMove} />
-    </div>
+    <>
+      <div className="ttt">
+        <h2>
+          TIC <span className="text-orange">TAC</span> TOE
+        </h2>
+
+        <a href="https://github.com/AiyushKumar07">
+          <button type="button" className="git_hub" />
+        </a>
+      </div>
+
+      <div className="app">
+        <StatusMessage winner={winner} gamingBoard={gamingBoard} />
+        <Board
+          squares={gamingBoard.squares}
+          handleSquareClick={handleSquareClick}
+          winningSquares={winningSquares}
+        />
+        <button
+          type="button"
+          className={`btn-reset ${winner ? 'active' : ' '}  `}
+          onClick={onNewGameStart}
+        >
+          Start New Game
+        </button>
+        <h2 style={{ fontWeight: 'normal' }}>Current Game History</h2>
+        <History history={history} moveTo={moveTo} currentMove={currentMove} />
+      </div>
+    </>
   );
 }
 
